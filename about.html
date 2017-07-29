@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Исторический турнир</title>
-  <style type="text/css">
-   body {
-    font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
-    background: #e1dfb9; /* Цвет фона */
-   }
-   h2 {
-    font-size: 1.1em; /* Размер шрифта */
-    color: #800040; /* Цвет текста */
-    margin-top: 0; /* Отступ сверху */
-   }
-   #container {
-    width: 500px; /* Ширина слоя */
-    margin: 0 auto; /* Выравнивание по центру */
-    background: #f0f0f0; /* Цвет фона левой колонки */
-   }
-   #header {
-    font-size: 2.2em; /* Размер текста */
-    text-align: center; /* Выравнивание по центру */
-    padding: 5px; /* Отступы вокруг текста */
-    background: #8fa09b; /* Цвет фона шапки */
-    color: #ffe; /* Цвет текста */
-   }
-   #sidebar {
-    margin-top: 10px; 
-    width: 110px; /* Ширина слоя */
-    padding: 0 10px; /* Отступы вокруг текста */
-    float: left; /* Обтекание по правому краю */
-   }
-   #content {
-    margin-left: 130px; /* Отступ слева */
-    padding: 10px; /* Поля вокруг текста */
-    background: #fff; /* Цвет фона правой колонки */
-   }
-   #footer {
-    background: #8fa09b; /* Цвет фона подвала */
-    color: #fff; /* Цвет текста */
-    padding: 5px; /* Отступы вокруг текста */
-    clear: left; /* Отменяем действие float */
-   }
-  </style>
- </head>
- <body>
-  <div id="container">
-   <div id="header">Исторический турнир</div>
-   <div id="sidebar">
-    <p><a href="stat.html">Статистика турнира</a></p>
-    <p><a href="interview.html">Интервью с главным судьей</a></p>
-    <p><a href="ask.html">Конкурсные вопросы</a></p>
-   </div>
-   <div id="content">
-    <h2>Опрос общественного мнения показал</h2>
-    <ul>
-     <li>что пароход изобретен: Петром I, А. Эйнштейном и А. Поповым;</li>
-     <li>Диего Веласкес писал свои полотна в стиле: империализма, кубизма 
-     и империосионизма;</li>
-     <li>Фаросский маяк находится в Фаросе;</li>
-     <li>конфуцианство возникло в: Италии, Корее и Франции;</li>
-     <li>богами торговли и воровства в Древней Греции были: Марс, Меркурий 
-     и Дионис;</li>
-     <li>Франция – это город;</li>
-     <li>богами загробного мира в Египте были: Аид, Анубис и Ассирис;</li>
-     <li>столица Золотой Орды — Монголия;</li>
-     <li>главные противники Александра Македонского: татаро-монголы, Дедал 
-     и Цезарь;</li>
-     <li>священными птицами — символами Афин были: ворона и орел;</li>
-     <li>в Древней Греции морями повелевали боги: Плутон, Нептун и Тритон.</li>
-    </ul> 
-   </div>
-   <div id="footer">&copy; Влад Мержевич</div>
-  </div> 
- </body>
+	<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	 <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+	 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	 <title>[-=KILL MAN=-]</title>
+	 <meta name="keywords" content="counter, strike, global, offensive, csgo, cs:go, rusjj, kill, man, killman, hide, and, seek, maniac, maniak, hns, hideandseek, [-=kill, man=-]">
+     <meta name="description" content="Home page of RusJJ aka [-=KILL MAN=-] - the CSGO Hide and Seek map maker!">
+	 <style type="text/css">
+	  body
+	  {
+       background-image: url(images/bg/broken_facility_bg.png);
+       background-position: center top;
+       background-size: 100% auto;
+      }
+      .header
+	  { 
+	   background-color: rgba(90, 90, 90, 0.8);
+       padding: 5px;
+       padding-right: 20px;
+	   padding-top: 0px;
+       border: solid 1px black;
+	   border-radius: 8px;
+       float: none;
+      }
+      .left_
+	  { 
+       width: 430px; 
+	   background-color: rgba(90, 90, 90, 0.0);
+       float: left;
+      }
+      .column_centered
+	  {
+	   background-color: rgba(90, 90, 90, 0.6);
+       padding: 5px;
+       border: solid 1px black; 
+	   border-radius: 8px;
+       float: none;
+       margin-left: 430px;
+      }
+      .column_left_header
+	  { 
+       width: 406px;
+	   background-color: rgba(90, 90, 90, 0.6);
+       padding: 2px;
+       border: solid 1px black; 
+	   border-radius: 8px;
+       float: left;
+      }
+      .column_left
+	  { 
+       width: 400px; 
+	   background-color: rgba(90, 90, 90, 0.0);
+       padding: 2px;
+       border: solid 1px black; 
+	   border-radius: 8px;
+       float: left;
+      }
+	  title_font
+	  {
+	   font-family: 'Permanent Marker', cursive;
+       font-size: 34pt;
+      }
+	  title_font_small
+	  {
+	   font-family: 'Permanent Marker', cursive;
+       font-size: 12pt;
+      }
+	  link_font
+	  {
+	   font-family: 'Courier New', cursive;
+       font-size: 11pt;
+      }
+     </style>
+     <div class="header"><center><title_font style="color:#C0C0C0";>Page of <a target="_blank" href="https://steamcommunity.com/profiles/76561198046857744"><font color="909090">[-=KILL MAN=-]</font></a></title_font><center></div><br>
+	</head>
+	<body background="images/bg/broken_facility_bg.png">
+	 <div>
+	 <!-- Left Column -->
+	 <div class="left_"> 
+	  <div class="column_left_header"><title_font_small><center>Links<br></center></title_font_small><div class="column_left"><link_font>
+	   •<a target="_blank" href="http://steamcommunity.com/groups/killmancommun"><font color="909090">Steam Group</font></a><br>
+	   •<a target="_blank" href="https://steamcommunity.com/profiles/76561198046857744"><font color="909090">Profile of [-=KILL MAN=-]</font></a><br>
+	   •<a target="_blank" href="steam://connect/hns.playitordie.eu:27015"><font color="909090">Join to the Server</font></a><br>
+	  </link_font></div></div>
+	  
+	  <div class="column_left_header"><title_font_small><center>Status of [-=KILL MAN=-]</center></title_font_small><div class="column_left"><a target="_blank" href="https://steamcommunity.com/profiles/76561198046857744"><img src="http://steamsignature.com/card/0/76561198046857744.png" alt="Go to profile"/></a></div></div>
+	 </div>
+	
+	 <!-- Centered Column -->
+	 <div class="column_centered">
+	  <title_font_small><center>My Workshop<br></center></title_font_small>
+	  
+	  <center><div>
+	   <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=957280394"><img width="30%" height="30%" src="https://steamuserimages-a.akamaihd.net/ugc/847089849186332685/906E13E5ACEDBB4438E7F4911B3B0BC0D01EAD50/" alt="Broken Facility"></a>
+	   <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=926388945"><img width="30%" height="30%" src="https://steamuserimages-a.akamaihd.net/ugc/821190166822442131/B1C5395B6C749ADECEC8C8A4436E35EB6FE04B6F/" alt="Violetto"></a>
+	   <a target="_blank" href="http://steamcommunity.com/sharedfiles/filedetails/?id=871116767"><img width="30%" height="30%" src="https://steamuserimages-a.akamaihd.net/ugc/155776119600229485/B5E2F35A10E3231F755165D28E8968EFE0FE099B/" alt="Supermarket"></a>
+	  </div></center>
+	 </div>
+	 
+	 </div>
+	</body>
+</html>
 </html>
