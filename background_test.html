@@ -6,14 +6,21 @@
 	 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	 <title>[-=KILL MAN=-]</title>
 	 <meta name="keywords" content="counter, strike, global, offensive, csgo, cs:go, rusjj, kill, man, killman, hide, and, seek, maniac, maniak, hns, hideandseek, [-=kill, man=-]">
-     <meta name="description" content="Home page of RusJJ aka [-=KILL MAN=-] - the CSGO Hide and Seek map maker!">]
-	 
-	 <script type="text/javascript">
-      var randombgs=["../images/violetto_bg.jpg", "../images/broken_facility_bg.png"]
-      document.body.style.background='white url('+Math.floor(Math.random()*randombgs.length)]+')')
-     </script>
+     <meta name="description" content="Home page of RusJJ aka [-=KILL MAN=-] - the CSGO Hide and Seek map maker!">	 
+	 <style type="text/css">
+	  body
+	  {
+       background-image: url(images/bg/broken_facility_bg.png);
+       background-position: center top;
+       background-size: 100% auto;
+      }
+	 </style>
 	</head>
 	<body>
-	 
+	 <script type="text/javascript">
+	  var randombgs = ['violetto_bg.jpg', 'broken_facility_bg.png'];
+	  var url = "url(https://rusjj.github.io/images/bg/"+randombgs[Math.floor(Math.random()*randombgs.length)]+")";
+      document.body.style.backgroundImage = url;
+     </script>
 	</body>
 </html>
