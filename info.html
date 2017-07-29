@@ -127,9 +127,11 @@
       document.body.style.backgroundImage = url;
      </script>
 	 
-	 <div class="column_left_c">
-	  <title_font><center>Emtpy..?<br><input type="file" name="f">
-   <input type="submit" value="Отправить"></center></title_font>
+	 <div class="column_left_c"><center>
+	  <title_font>Emtpy..?</title_font><br>
+	  <form enctype="multipart/form-data" method="post">
+	  <input type="file" name="f" accept="image/png">
+      <input type="submit" value="Отправить"></center></form> 
 	 </div>
 	</body>
 </html>
